@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova PHP</title>
+</head>
+<body>
+
+    <h2>Tabella utenti con MySQL e PHP</h2>
+    <form action="inserisci_utente.php" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br>
+        <label for="cognome">Cognome:</label><br>
+        <input type="text" id="cognome" name="cognome" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Inserisci Utente">
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <form action="elenco_utenti.php" method="get" name="form">
+        <input type="submit" value="Elenco Utenti">
+    </form>
+</body>
+</html>
